@@ -3,7 +3,7 @@
 chatGPT:
 https://openai.com/index/chatgpt/ -> Login; Buscar="API-Keys" e criar uma nova chave. 
 
-api_key = "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"
+api_key = ""
 
 API referencia Doc = https://platform.openai.com/docs/api-reference/introduction; 
 
@@ -18,7 +18,7 @@ import requests #(pip install) - para fazer requisições
 import json #() permite formatar as informações da maneira correta. (linguagem das respostas e requerimentos)
 
 try:
-    senha = "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"
+    senha = ""
     #----------------------------------------------------------------------------------------------------------
     # Autentication 
     # link = "https://api.openai.com/v1/models" # Lista de modelos de requisição disponíveis da openia;
