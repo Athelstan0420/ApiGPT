@@ -35,14 +35,17 @@ try:
     body_mensagens = {
 
         "model":id_modelo_ia,   
-        "messages":[{"role": "user", "content": "Me entregue seuquencia de fibonacci" }]
+        "messages":[{"role": "user", "content": "Me entregue sequencia de fibonacci" }]
 
     }
 
     body_mensagens = json.dumps(body_mensagens) # Conversão do dicionário criado em json. 
     requisicao = requests.post(link, headers=headers, data=body_mensagens)#
 
-    print(requisicao)
+    #print(requisicao)
+    resposta = requisicao.json()
+    mensagem = resposta["choices"][0]["message"]["content"]
+    print(mensagem)
 
 except:
     print("ERRO!")
